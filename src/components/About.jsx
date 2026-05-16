@@ -23,7 +23,7 @@ function About() {
 
         <h2 className="text-4xl md:text-6xl font-bold font-serif text-[#f8dada] mb-6 leading-tight">
 
-          Welcome To Redox Cafe
+          Welcome To Ridox Cafe
 
         </h2>
 
@@ -49,7 +49,7 @@ function About() {
 
           <p className="text-gray-300 text-lg md:text-2xl leading-10">
 
-            Redox Cafe is a premium luxury restaurant designed for people who love elegant ambience, delicious food and unforgettable dining experiences.
+            Ridox Cafe is a premium luxury restaurant designed for people who love elegant ambience, delicious food and unforgettable dining experiences.
 
             Our cafe combines modern interiors, handcrafted coffee and chef-special dishes to create a relaxing and classy atmosphere.
 
@@ -59,7 +59,7 @@ function About() {
 
             From freshly brewed premium coffee to mouth-watering pizzas, burgers and desserts — every dish is prepared with passion and perfection.
 
-            Whether you want a peaceful coffee break, family dinner or luxury dining experience, Redox Cafe is the perfect destination.
+            Whether you want a peaceful coffee break, family dinner or luxury dining experience, Ridox Cafe is the perfect destination.
 
           </p>
 

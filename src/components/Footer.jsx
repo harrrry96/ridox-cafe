@@ -55,7 +55,7 @@ function Footer() {
 
           <h1 className="text-5xl md:text-5x4 font-bold text-[#f8dada] font-serif text-center">
 
-            Redox Cafe
+            Ridox Cafe
 
           </h1>
 
@@ -93,7 +93,7 @@ function Footer() {
 
               <FaEnvelope className="text-[#ffcc70]" />
 
-              <p>redoxcafe@gmail.com</p>
+              <p>ridoxcafe@gmail.com</p>
 
             </div>
 

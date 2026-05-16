@@ -48,7 +48,7 @@ function Contact() {
             </p>
 
             <p>
-              ✉ redoxcafe@gmail.com
+              ✉ ridoxcafe@gmail.com
             </p>
 
             <p>
