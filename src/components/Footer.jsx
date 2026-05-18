@@ -2,100 +2,121 @@ import {
   FaClock,
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaEnvelope,
+  FaInstagram,
 } from "react-icons/fa";
 
 function Footer() {
-
   return (
+    <footer className="bg-[#140107] text-white border-t border-[#3b0615] overflow-hidden">
 
-    <footer className="bg-[#140107] text-white border-t border-[#3b0615]">
+      {/* TOP FOOTER */}
+      <div
+        className="
+        flex justify-between items-center
+        px-4 md:px-10 py-6
+        gap-4
+        "
+      >
 
-      {/* Main Footer */}
+        {/* LEFT */}
+        <div className="w-1/3">
 
-      <div className="grid md:grid-cols-3">
-
-        {/* Left - Opening Hours */}
-
-        <div className="px-8 py-8">
-
-          <h2 className="text-3xl md:text-5*4 font-bold text-[#ffcc70] mb-6 font-serif flex items-center gap-1">
-
+          <h2
+            className="
+            text-[#ffcc70]
+            text-lg sm:text-2xl md:text-5xl
+            font-bold font-serif
+            flex items-center gap-2 md:gap-4
+            mb-3
+            "
+          >
             <FaClock />
-
             Opening Hours
-
           </h2>
 
-          <div className="space-y-4 text-gray-300 text-xl max-w-[280px]">
+          <div
+            className="
+            text-[11px] sm:text-lg md:text-3xl
+            text-gray-200
+            space-y-2
+            "
+          >
 
-            <p className="flex justify-between">
-
+            <div className="flex justify-between max-w-[420px]">
               <span>Mon - Fri</span>
-
               <span>9AM - 11PM</span>
+            </div>
 
-            </p>
-
-            <p className="flex justify-between">
-
+            <div className="flex justify-between max-w-[420px]">
               <span>Sat - Sun</span>
-
               <span>10AM - 12PM</span>
-
-            </p>
+            </div>
 
           </div>
 
         </div>
 
-        {/* Center - Logo */}
+        {/* CENTER */}
+        <div className="w-1/3 text-center">
 
-        <div className="flex items-center justify-center py-8">
-
-          <h1 className="text-5xl md:text-5x4 font-bold text-[#f8dada] font-serif text-center">
-
+          <h1
+            className="
+            text-[#f7dede]
+            text-3xl sm:text-5xl md:text-8xl
+            font-bold font-serif
+            "
+          >
             Ridox Cafe
-
           </h1>
 
         </div>
 
-        {/* Right - Contact */}
+        {/* RIGHT */}
+        <div className="w-1/3 flex flex-col items-end">
 
-        <div className="px-8 py-8 flex flex-col items-end">
-
-          <h2 className="text-3xl md:text-4x5 font-bold text-[#ffcc70] mb-6 font-serif text-right w-full">
-
-            Contact Info
-
+          <h2
+            className="
+            text-[#ffcc70]
+            text-lg sm:text-2xl md:text-5xl
+            font-bold font-serif
+            mb-3
+            "
+          >
+            Contact Us
           </h2>
 
-          <div className="space-y-5 text-gray-300 text-xl w-full flex flex-col items-end">
+          <div
+            className="
+            text-[11px] sm:text-lg md:text-3xl
+            text-gray-200
+            space-y-2
+            "
+          >
 
-            <div className="flex items-center gap-4">
-
+            <div className="flex items-center gap-2 md:gap-4 justify-end">
               <FaMapMarkerAlt className="text-[#ffcc70]" />
-
-              <p>Lucknow, Uttar Pradesh</p>
-
+              <p>Lucknow</p>
             </div>
 
-           <div className="flex items-center gap-4">
-
+            <div className="flex items-center gap-2 md:gap-4 justify-end">
               <FaPhoneAlt className="text-[#ffcc70]" />
-
-              <p>+91 9876543210</p>
-
+              <p>7518710079</p>
             </div>
 
-            <div className="flex items-center gap-4">
-
-              <FaEnvelope className="text-[#ffcc70]" />
-
-              <p>ridoxcafe@gmail.com</p>
-
-            </div>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              flex items-center gap-2 md:gap-4
+              justify-end
+              hover:text-[#ffcc70]
+              duration-300
+              "
+            >
+              <FaInstagram className="text-[#ffcc70]" />
+              <p></p>
+            </a>
 
           </div>
 
@@ -103,20 +124,41 @@ function Footer() {
 
       </div>
 
-      {/* Bottom */}
+      {/* BOTTOM */}
+      <div
+        className="
+        border-t border-[#3b0615]
+        py-3 px-2
+        text-center
+        text-gray-400
+        text-[10px] sm:text-sm md:text-lg
+        "
+      >
 
-      <div className="border-t border-[#3b0615] py-4 text-center text-gray-400 text-sm md:text-base">
+        © 2026 Ridox Cafe. All Rights Reserved.
 
-        © 2026 Redox Cafe. All Rights Reserved.
-        <span className="mx-3 text-[#ffcc70]">|</span>
-        Developed By <span className="text-[#ffcc70]">Mohammad Aman Khan</span>
+        <span className="mx-2 text-[#ffcc70]">|</span>
+
+        Developed By{" "}
+
+        <a
+          href="https://webamankhan.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+          text-[#ffcc70]
+          hover:text-white
+          duration-300
+          font-semibold
+          "
+        >
+          Mohammad Aman Khan
+        </a>
 
       </div>
 
     </footer>
-
-  )
-
+  );
 }
 
-export default Footer
+export default Footer;
