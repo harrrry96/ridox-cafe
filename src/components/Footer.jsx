@@ -12,22 +12,27 @@ function Footer() {
       {/* TOP FOOTER */}
       <div
         className="
-        flex justify-between items-center
-        px-4 md:px-10 py-6
-        gap-4
+        max-w-[1900px]
+        mx-auto
+        grid grid-cols-3
+        items-start
+        gap-3 md:gap-8
+        px-3 md:px-10
+        py-6
         "
       >
 
         {/* LEFT */}
-        <div className="w-1/3">
+        <div>
 
           <h2
             className="
             text-[#ffcc70]
-            text-lg sm:text-2xl md:text-5xl
+            text-[14px] sm:text-2xl md:text-4xl
             font-bold font-serif
-            flex items-center gap-2 md:gap-4
+            flex items-center gap-2 md:gap-3
             mb-3
+            whitespace-nowrap
             "
           >
             <FaClock />
@@ -36,18 +41,18 @@ function Footer() {
 
           <div
             className="
-            text-[11px] sm:text-lg md:text-3xl
-            text-gray-200
+            text-white
+            text-[11px] sm:text-lg md:text-2xl
             space-y-2
             "
           >
 
-            <div className="flex justify-between max-w-[420px]">
+            <div className="flex justify-between gap-2 md:gap-10">
               <span>Mon - Fri</span>
               <span>9AM - 11PM</span>
             </div>
 
-            <div className="flex justify-between max-w-[420px]">
+            <div className="flex justify-between gap-2 md:gap-10">
               <span>Sat - Sun</span>
               <span>10AM - 12PM</span>
             </div>
@@ -56,30 +61,32 @@ function Footer() {
 
         </div>
 
-        {/* CENTER */}
-        <div className="w-1/3 text-center">
+       {/* CENTER */}
+<div className="flex justify-center items-start pt-130">
 
-          <h1
-            className="
-            text-[#f7dede]
-            text-3xl sm:text-5xl md:text-8xl
-            font-bold font-serif
-            "
-          >
-            Ridox Cafe
-          </h1>
+  <h1
+    className="
+    text-[#f7dede]
+    text-2xl sm:text-4xl md:text-6xl
+    font-bold font-serif
+    whitespace-nowrap
+    text-center
+    "
+  >
+    Ridox Cafe
+  </h1>
 
-        </div>
-
+</div>
         {/* RIGHT */}
-        <div className="w-1/3 flex flex-col items-end">
+        <div className="text-right">
 
           <h2
             className="
             text-[#ffcc70]
-            text-lg sm:text-2xl md:text-5xl
+            text-[14px] sm:text-2xl md:text-4xl
             font-bold font-serif
             mb-3
+            whitespace-nowrap
             "
           >
             Contact Us
@@ -87,35 +94,65 @@ function Footer() {
 
           <div
             className="
-            text-[11px] sm:text-lg md:text-3xl
-            text-gray-200
-            space-y-2
+            flex flex-col
+            gap-2
+            text-white
+            text-[11px] sm:text-lg md:text-2xl
             "
           >
 
-            <div className="flex items-center gap-2 md:gap-4 justify-end">
-              <FaMapMarkerAlt className="text-[#ffcc70]" />
-              <p>Lucknow</p>
-            </div>
-
-            <div className="flex items-center gap-2 md:gap-4 justify-end">
-              <FaPhoneAlt className="text-[#ffcc70]" />
-              <p>7518710079</p>
-            </div>
-
+            {/* LOCATION */}
             <a
-              href="https://instagram.com/"
+              href="https://maps.google.com/?q=529C/009+Opposite+Jagrani+Hospital+Lucknow"
               target="_blank"
               rel="noopener noreferrer"
               className="
-              flex items-center gap-2 md:gap-4
+              flex items-center
               justify-end
+              gap-2
               hover:text-[#ffcc70]
               duration-300
+              whitespace-nowrap
+              "
+            >
+              <FaMapMarkerAlt className="text-[#ffcc70]" />
+              <span>Lucknow</span>
+            </a>
+
+            {/* PHONE */}
+            <a
+              href="https://wa.me/917518710079"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              flex items-center
+              justify-end
+              gap-2
+              hover:text-[#ffcc70]
+              duration-300
+              whitespace-nowrap
+              "
+            >
+              <FaPhoneAlt className="text-[#ffcc70]" />
+              <span>7518710079</span>
+            </a>
+
+            {/* INSTAGRAM */}
+            <a
+              href="https://www.instagram.com/ridoxcafe06?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              flex items-center
+              justify-end
+              gap-2
+              hover:text-[#ffcc70]
+              duration-300
+              whitespace-nowrap
               "
             >
               <FaInstagram className="text-[#ffcc70]" />
-              <p></p>
+              <span>@ridoxcafe06</span>
             </a>
 
           </div>
@@ -124,7 +161,7 @@ function Footer() {
 
       </div>
 
-      {/* BOTTOM */}
+      {/* BOTTOM FOOTER */}
       <div
         className="
         border-t border-[#3b0615]
